@@ -307,6 +307,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -407,56 +420,6 @@
             <hr/>
 
             
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">ICEMAN</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="http://ICEMANbook.github.io/2021/06/03/B0010E/">http://ICEMANbook.github.io/2021/06/03/B0010E/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">ICEMAN</a>
-                    !
-                </span>
-            </div>
-        
-    </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
 
 
 
@@ -785,61 +748,35 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/03/B0010E/">
+                <a href="/2021/06/04/shuoming/">
                     <div class="card-image">
                         
-                        <img src="https://i.loli.net/2021/06/03/1dbrnqpLBy9iZFc.jpg" class="responsive-img" alt="Mauser Military Rifles of the World">
+                        <img src="https://i.loli.net/2021/06/04/wlOZjzqrSxkByQu.jpg" class="responsive-img" alt="使用说明&amp;疑难解答">
                         
-                        <span class="card-title">Mauser Military Rifles of the World</span>
+                        <span class="card-title">使用说明&amp;疑难解答</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            毛瑟步枪全史，了解毛瑟必备
+                            必读指南
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%A4%96%E6%96%87%E4%B9%A6%E7%B1%8D/" class="post-category">
-                                    外文书籍
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ICEMAN
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%BE%B7%E5%9B%BD/">
-                        <span class="chip bg-color">德国</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                        <span class="chip bg-color">历史</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%8B%B1%E8%AF%AD/">
-                        <span class="chip bg-color">英语</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%AF%9B%E7%91%9F/">
-                        <span class="chip bg-color">毛瑟</span>
-                    </a>
-                    
                 </div>
                 
             </div>
