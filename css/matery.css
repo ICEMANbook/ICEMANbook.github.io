@@ -226,8 +226,8 @@ mark {
 }
 
 .card {
-    border-radius: 10px;
-    box-shadow: 0 0px 0px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    border-radius: 3px;
+    box-shadow: none
 }
 
 .card .card-image img {
@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #666666 0%, #666666 100%);
+    background-image: linear-gradient(to right, #666 0%, #666666 100%);
 }
 
 .text-color {
@@ -257,7 +257,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #1f1f1f 0%, #1f1f1f 100%);
     opacity: 0.8;
 }
 
@@ -280,7 +280,7 @@ nav {
 }
 
 header .nav-transparent {
-    background-color: transparent !important;
+    background-color: #1f1f1f !important;
     background-image: none;
     box-shadow: none;
 }
@@ -791,7 +791,7 @@ header .go-back i {
     color: rgba(0, 0, 0, .87);
     background: #fff 50%;
     background-size: cover;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    box-shadow: none
 }
 
 .recommend .post-card .post-body {
@@ -897,7 +897,7 @@ article .card-image {
 article .card-image img {
     height: 450px;
     border-radius: 0.3rem;
-    opacity: .9;
+    opacity: .7;
 }
 
 article .tag-image img {
@@ -969,7 +969,7 @@ article .article-tags .chip {
 }
 
 .prev-next .right-badge {
-    border-radius: 0 8px 0 8px;
+    border-radius: 3 3px 3 3px;
     right: 10px;
 }
 
@@ -1020,7 +1020,7 @@ article .article-tags .chip {
 }
 
 #artDetail .card {
-    box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
+    box-shadow: none
     0 5px 15px rgba(0, 0, 0, .07),
     0 2px 5px -5px rgba(0, 0, 0, .1) !important;
 }
@@ -1045,7 +1045,7 @@ article .article-tags .chip {
     height: 25px;
     line-height: 24px;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 3px;
     margin-right: 5px;
     margin-bottom: 2px;
 }
