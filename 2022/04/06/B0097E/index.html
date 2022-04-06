@@ -247,7 +247,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '1e1b3bab0ef3e4643fbb5064f167e391493ba2f96984b3991e8417b23c44f12f';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('本书是众筹书或非公开书，请输入密码访问')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
